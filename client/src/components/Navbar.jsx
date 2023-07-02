@@ -16,10 +16,10 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="links">
-          <Link className='link' to="?cat=art">
+          <Link className='link' to="/?cat=art">
             <h6>Art</h6>
           </Link>
-          <Link className='link' to="?cat=science">
+          <Link className='link' to="/?cat=science">
             <h6>Science</h6>
           </Link>
           <Link className='link' to="?cat=technology">
