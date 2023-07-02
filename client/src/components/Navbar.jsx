@@ -22,16 +22,16 @@ const Navbar = () => {
           <Link className='link' to="/?cat=science">
             <h6>Science</h6>
           </Link>
-          <Link className='link' to="?cat=technology">
+          <Link className='link' to="/?cat=technology">
             <h6>Technology</h6>
           </Link>
-          <Link className='link' to="?cat=cinema">
+          <Link className='link' to="/?cat=cinema">
             <h6>Cinema</h6>
           </Link>
-          <Link className='link' to="?cat=design">
+          <Link className='link' to="/?cat=design">
             <h6>Design</h6>
           </Link>
-          <Link className='link' to="?cat=food">
+          <Link className='link' to="/?cat=food">
             <h6>Food</h6>
           </Link>
           <span>{currentUser?.username}</span>
