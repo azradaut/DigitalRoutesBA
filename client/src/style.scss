@@ -30,6 +30,7 @@ button{
         }
         //Login and register
         .auth{
+            margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -48,22 +49,19 @@ button{
                 flex-direction: column;
                 padding: 10px;
                 background-color: white;
-                width: 200px;
+                width: 250px;
+                height: 350px;
                 gap: 20px;
 
                 input{
                     padding: 10px;
                     border: none;
-                    border-bottom: 1px solid gray;
+                    border-bottom: 1px solid rgb(63, 63, 63);
                 }
 
-              /*  button{
-                    padding: 10px;
-                    border: none;
-                    background-color: $green;
-                    cursor: pointer;
-                    color: white;
-                }*/
+                button{
+                    align-self: center;
+                }
 
                 p{
                     font-size: 12px;
@@ -170,10 +168,8 @@ button{
                 .post{
                     display: flex;
                     gap: 100px;
-
-                    &:nth-child(2n+1){
-                        flex-direction: row-reverse;
-                    }
+                    flex-direction: row-reverse;
+                
 
                     .img{
                         flex: 2;

@@ -88,16 +88,6 @@ const Register = () => {
           name='password'
           onChange={handleChange}
         />
-        <input
-          type='file'
-          style={{ display: 'none' }}
-          name='file'
-          id='file'
-          onChange={handleFileChange}
-        />
-        <label className='file' htmlFor='file'>
-          Upload profile photo
-        </label>
         <button onClick={handleSubmit}>Register</button>
         {errorMessage && <p>{errorMessage}</p>}
         <span>
