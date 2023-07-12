@@ -13,14 +13,16 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(`/posts${cat}`);
-        setPosts(res.data);
+        const sortedData = res.data.reverse();
+        setPosts(sortedData);
       } catch (err) {
         console.log(err);
       }
     };
+  
     fetchData();
   }, [cat]);
-
+  
   const sanitizeHTML = (html) => {
     const sanitizedHTML = DOMPurify.sanitize(html);
     return { __html: sanitizedHTML };
