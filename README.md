@@ -1,6 +1,5 @@
 # DigitalRoutesBA - Blog Web App
-
-###DigitalRoutesBA is a blog web application designed for the course "Development of web applications". It allows users to read and publish blog posts, as well as edit or delete posts they made. Topic of blog is digital nomadism in Bosnia and Herzegovina.
+### DigitalRoutesBA is a blog web application designed for the course "Development of web applications". It allows users to read and publish blog posts, as well as edit or delete posts they made. Topic of blog is digital nomadism in Bosnia and Herzegovina.
 
 ## Features
 * User Registration: Users can create an account to access additional features and interact with the blog.
