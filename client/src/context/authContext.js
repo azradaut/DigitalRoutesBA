@@ -9,14 +9,24 @@ export const AuthContexProvider = ({ children }) => {
     );
 
     const login = async (inputs) => {
-        const res = await axios.post("/auth/login", inputs);
-        setCurrentUser(res.data);
-      };
+      try {
+        const response = await axios.post("/auth/login", inputs);
+        setCurrentUser(response.data); // Set the currentUser state with the returned data
+      } catch (err) {
+        throw new Error(err.response.data);
+      }
+    };
     
-      const logout = async (inputs) => {
-        await axios.post("/auth/logout");
-        setCurrentUser(null);
-      };
+    
+    const logout = async () => {
+    try {
+      await axios.post('/auth/logout');
+      setCurrentUser(null);
+      localStorage.removeItem('user');
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
     useEffect(() => {
         localStorage.setItem("user", JSON.stringify(currentUser));

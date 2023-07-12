@@ -39,10 +39,10 @@ const Single = () => {
     }
   }
 
-  const getText = (html) => {
+  /*const getText = (html) => {
     const doc = new DOMParser().parseFromString(html, "text/html")
     return doc.body.textContent;
-  }
+  }*/
 
   return (
     <div className='single'>
@@ -65,7 +65,7 @@ const Single = () => {
           )}
         </div>
         <h1>{post.title}</h1>
-          {getText(post.desc)}
+        <div dangerouslySetInnerHTML={{ __html: post.desc }}></div>
        
       </div>
       <div className="menu">
