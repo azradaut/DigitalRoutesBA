@@ -71,28 +71,28 @@ state ? await axios.put(`/posts/${state.id}`, {
         <div className="item">
           <h1>Category</h1>
           <div className="cat">
-            <input type="radio" checked={cat === "art"} name='cat' value='art' id='art' onChange={e=>setCat(e.target.value)}/>
-            <label htmlFor="art">Art</label>
+            <input type="radio" checked={cat === "lifestyle"} name='cat' value='lifestyle' id='lifestyle' onChange={e=>setCat(e.target.value)}/>
+            <label htmlFor="lifestyle">Lifestyle</label>
           </div>
           <div className="cat">
-            <input type="radio" checked={cat === "science"} name='cat' value='science' id='science' onChange={e=>setCat(e.target.value)}/>
-            <label htmlFor="science">Science</label>
+            <input type="radio" checked={cat === "explore"} name='cat' value='explore' id='explore' onChange={e=>setCat(e.target.value)}/>
+            <label htmlFor="explore">Explore</label>
           </div>
           <div className="cat">
-            <input type="radio" checked={cat === "technology"} name='cat' value='technology' id='technology' onChange={e=>setCat(e.target.value)}/>
-            <label htmlFor="technology">Technology</label>
+            <input type="radio" checked={cat === "expreiences"} name='cat' value='expreiences' id='expreiences' onChange={e=>setCat(e.target.value)}/>
+            <label htmlFor="expreiences">Expreiences</label>
           </div>
           <div className="cat">
-            <input type="radio" checked={cat === "cinema"} name='cat' value='cinema' id='cinema' onChange={e=>setCat(e.target.value)}/>
-            <label htmlFor="cinema">Cinema</label>
+            <input type="radio" checked={cat === "tips"} name='cat' value='tips' id='tips' onChange={e=>setCat(e.target.value)}/>
+            <label htmlFor="tips">Tips</label>
           </div>
           <div className="cat">
-            <input type="radio" checked={cat === "design"} name='cat' value='design' id='design' onChange={e=>setCat(e.target.value)}/>
-            <label htmlFor="design">Design</label>
+            <input type="radio" checked={cat === "visa"} name='cat' value='visa' id='visa' onChange={e=>setCat(e.target.value)}/>
+            <label htmlFor="visa">Visa</label>
           </div>
           <div className="cat">
-            <input type="radio" checked={cat === "food"} name='cat' value='food' id='food' onChange={e=>setCat(e.target.value)}/>
-            <label htmlFor="food">Food</label>
+            <input type="radio" checked={cat === "events"} name='events' value='events' id='events' onChange={e=>setCat(e.target.value)}/>
+            <label htmlFor="events">Events</label>
           </div>
         </div>
       </div>
