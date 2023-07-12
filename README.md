@@ -6,6 +6,7 @@
 * User Authentication: Secure login functionality to protect user accounts and prevent unauthorized access.
 * Blog Posts: Users can read, create, update, and delete blog posts.
 * Categories: Posts can be categorized into different topics or categories for easy navigation and organization.
+* Advanced Editor: Integrate a rich text editor for a more robust writing experience.
 
 ## Technologies Used
 Frontend:
